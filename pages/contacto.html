@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Mundo Mascotas - Contacto</title>
+</head>
+
+<body>
+    <div class="grid-navbar">
+        <img class = imagenLogo  src="../img/logo.png" alt="logo" title="se muestra logo">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./consejos.html">Consejos</a></li>
+        <li><a href="./servicios.html">Servicios</a></li>
+        <li><a href="./adopciones.html">Adopciones</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+</div>
+
+    <main> 
+        <h2 class="titulo">Formulario de Contacto</h2>
+        <form> 
+            <fieldset class="cardFromulario">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required placeholder="Ingrese nombre completo">
+                </div>
+                <div>
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="e-mail" required placeholder="Ingrese e-mail">
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono">
+                </div>
+                <div>
+                    <h5>Estas interesado/a en adoptar?</h5>
+                    <label for="elegir">Si</label>
+                    <input type="radio" name="opciones" id="si">
+                    <label for="elegir">No</label>
+                    <input type="radio" name="opciones" id="no">
+                </div>
+                <div>
+                    <h5>Dejanos tu comentario</h5>
+                    <textarea placeholder="Mensaje"></textarea>
+                </div>
+                <div>
+                    <h5>Como nos conociste</h5>
+                    <label for="opcion1">Recomendacion</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="opcion1">Redes Sociales</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="opcion3">Buscador</label>
+                    <input type="checkbox" name="" id="">
+                    <label for="opcion4">Otra</label>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div>
+                    <p>Gracias por contactarnos</p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset"  value="Limpiar formulario">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <div class="grid-footer">
+        <p>Todos los derechos reservados &#169; </p>
+    </div>
+</body>
+</html>

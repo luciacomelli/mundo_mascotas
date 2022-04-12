@@ -1,0 +1,233 @@
+body,html {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+
+
+@media (max-width: 1200px) { 
+  .container {  display: grid;
+    grid-template-columns: 0.2fr 2.7fr 0.1fr;
+    grid-template-rows: 0.9fr 1.9fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". grid-navbar ."
+      ". grid-main ."
+      ". grid-footer .";
+  }
+  
+  .grid-navbar {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo"
+      "nav-index"
+      "nav-consejos"
+      "nav-servicios"
+      "nav-adopciones"
+      "nav-contacto";
+      grid-area: grid-navbar; 
+      align-items: center;
+      justify-items: start
+  }
+  
+  .logo { grid-area: logo; }
+  
+  .nav-index { grid-area: nav-index; }
+  
+  .nav-consejos { grid-area: nav-consejos; }
+  
+  .nav-servicios { grid-area: nav-servicios; }
+  
+  .nav-adopciones { grid-area: nav-adopciones; }
+  
+  .nav-contacto { grid-area: nav-contacto; }
+  
+  .grid-main {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "."
+      ".";
+    grid-area: grid-main;
+  }
+  
+  .grid-footer { grid-area: grid-footer; }
+
+  .menu {
+    list-style-type: none;
+    text-align: center;
+  }
+  .grid-navbar li {
+    display: inline;
+  }
+  .grid-navbar li a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 150%;
+    margin-right: 0.825%;
+    text-align: center;
+    line-height: 2;
+    color:white;
+  }
+  a:link, a:visited, a:focus {
+    background: #3FC1C9;
+  }
+  a:hover {
+    background:#364F6B;
+  }
+  
+}
+
+
+
+@media (min-width: 1200px) { 
+
+  .titulo {
+      font-family:Impact, sans-serif;
+      text-align: center;
+      color: #364F6B;
+      margin-top: 45px;
+  }
+  .imagenPortada{
+  
+      width: 700px;
+      margin: 0 auto;
+      
+  }
+  
+  .textoCentrado{
+    text-align: center;
+  }
+  .cardConsejos{
+    margin-left: 390px;
+  }
+  .cardFromulario{
+  width: 800px;
+  height: 430px;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 500px;
+  color: #364F6B;
+  }
+  .cardServiciosTitle{
+    color: #3FC1C9;
+    padding: 0rem 5.5rem;
+    padding-top: 1.5rem;
+    font-size: 30px;
+  }
+  .cardAdopciones{
+    background: #364F6B;
+    width: 62rem;
+    height: 30rem;
+    border-radius: 8px;
+    margin-left: 470px;
+  }
+  .cardAdopcionesTitle{
+    color: white;
+    padding: 0rem 28.5rem;
+    padding-top: 1.5rem;
+    font-size: 30px;
+  }
+  .imgResponsive{
+    height: 300px;
+    margin-left: 80px;
+  }
+  .cardAdopcionesText{
+    color: white;
+    text-align: center;
+  }
+  .button{
+    text-decoration: none;
+    color: white;
+    background: #3FC1C9;
+    padding: 0.3rem;
+    border-radius: 8px;
+    margin: 0rem 27.5rem;
+  }
+  
+  .container {  display: grid;
+    grid-template-columns: 0.3fr 1.7fr 0.3fr;
+    grid-template-rows: 0.4fr 3fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "grid-navbar grid-navbar grid-navbar"
+      ". grid-main ."
+      "grid-footer grid-footer grid-footer";
+  }
+  
+  .grid-navbar { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    
+    gap: 0px 13px; 
+    grid-template-areas: 
+      ". . . . . ."
+      "logo nav-index nav-consejos nav-servicios nav-adopciones nav-contacto"
+      ". . . . . ."; 
+    grid-area: grid-navbar; 
+    align-items: center;
+    justify-items: start
+  }
+  .logo{  
+    grid-area: logo;
+    top: 15px;
+    left: 40px; 
+  }
+  .imagenLogo{
+    width: 200px;
+  }
+  
+  
+  .grid-footer { 
+    grid-area: grid-footer; 
+    text-align: center;
+    color:white;
+    background-color: #3FC1C9;
+  }
+  
+  .grid-main {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 16px 0px; 
+    grid-template-areas: 
+      "titulo"
+      "index-article"; 
+    grid-area: grid-main; 
+  }
+  .titulo { grid-area: titulo; }
+  .index-article { grid-area: index-article; }
+  .menu {
+    list-style-type: none;
+    text-align: center;
+  }
+  .grid-navbar li {
+    display: inline;
+  }
+  .grid-navbar li a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 180%;
+    margin-right: 0.825%;
+    text-align: center;
+    line-height: 2;
+    color:white;
+  }
+  a:link, a:visited, a:focus {
+    background: #3FC1C9;
+  }
+  a:hover {
+    background:#364F6B;
+  }
+  
+}
