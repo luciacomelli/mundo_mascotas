@@ -181,15 +181,16 @@ body,html {
   .grid-navbar { 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    
     gap: 0px 13px; 
     grid-template-areas: 
       ". . . . . ."
       "logo nav-index nav-consejos nav-servicios nav-adopciones nav-contacto"
       ". . . . . ."; 
-    grid-area: grid-navbar; 
+   
     align-items: center;
-    justify-items: start
+    justify-items: center;
+    background: darkorange;
+    justify-content: space-evenly;
   }
   .logo{  
     grid-area: logo;
@@ -199,7 +200,7 @@ body,html {
   .imagenLogo{
     width: 200px;
   }
-  
+
   
   .grid-footer { 
     grid-area: grid-footer; 
@@ -243,6 +244,20 @@ body,html {
   a:hover {
     background:#364F6B;
     transform: scale(1.5);
+  }
+
+  .enlaceMenu:hover {
+    background: crimson;
+  }
+  .enlaceMenu:focus{
+    background: greenyellow;
+  }
+
+  .nav-index { 
+    grid-area: nav-index; 
+    background: yellow;
+    width: 90%;
+
   }
   
 }
