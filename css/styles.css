@@ -4,7 +4,7 @@
 }
 
 body{
-  background: #fff;
+  background: rgb(224, 221, 221);
   color: #000;
   font-family: 'Roboto' , sans-serif;
 }
@@ -95,7 +95,34 @@ body{
   width: 500px;
   height: 600px;
 }
+  .nav-item:hover{
+    background: #EBCECC;
 
+  }
+  .consejos-accordion{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #EBCECC;
+    grid-template-areas: "consejos-perros" 
+                         "consejos-gatos";
+    justify-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .consejos-perros{
+    grid-area: consejos-perros;
+    align-items: center;
+  }
+  .consejos-gatos{
+    grid-area: consejos-gatos;
+    align-items: center;
+  }
+  .card-consejos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -184,6 +211,38 @@ body{
     width: 500px;
     height: 600px;
   }
+
+
+    .nav-item:hover{
+      background: #EBCECC;
+ 
+    }
+    .consejos-accordion{
+      display: grid;
+      grid-template-columns: 1fr;
+      background: #EBCECC;
+      grid-template-areas: "consejos-perros" 
+                           "consejos-gatos";
+      justify-items: center;
+      margin: 1rem;
+      padding: 1rem;
+    }
+    .consejos-perros{
+      grid-area: consejos-perros;
+      align-items: center;
+    }
+    .consejos-gatos{
+      grid-area: consejos-gatos;
+      align-items: center;
+    }
+    .card-consejos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    }
+    
+
 }
 
 @media (min-width: 1200px) {
@@ -240,6 +299,7 @@ body{
 .foto-intro{
   width: 500px;
   height: auto;
+  margin: 5rem 4rem;
 }
 
 .tituloA{
@@ -283,23 +343,65 @@ body{
   height: 600px;
 }
 
-.carousel-caption p, h5{
-  color: #fff;
-  font-size: 1.5rem;
+.foto-adopciones:hover {
+transform: scale(1.2);
+}
+
+.nav-item{
+  transition: 1s;
   
-
-
+  }
+  .nav-item:hover{
+    background: #EBCECC;
+    transform: scale(1.1);
+    padding: 1px; 
+  }
+.consejos-accordion{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  background: #EBCECC;
+  grid-template-areas: "consejos-perros consejos-gatos";
+  justify-items: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+.consejos-perros{
+  grid-area: consejos-perros;
+  align-items: center;
+}
+.consejos-gatos{
+  grid-area: consejos-gatos;
+  align-items: center;
+}
+.card-consejos{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 1rem;
 }
 
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
  font-size: 1.5rem;
-  color:grey;
+  color: #fff;
 }
 .navbar-light .navbar-nav .nav-link {
   color: #362A38;
   font-size: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #2BBEC6;
+}
+.accordion-item{
+  color: #362A38;
+}
+.titulo-consejos{
+  text-align: center;
+  color: #362A38;
+  margin: 1rem;
 }
 .btn-primary {
   color: #fff;
